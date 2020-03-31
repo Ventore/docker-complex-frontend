@@ -12,8 +12,8 @@
     {{ renderSeenIndexes }}
 
     <h3>Calculated Values:</h3>
-    <div v-for="(value, i) in values" :key="i">
-      For index {{ key }} I calculated {{ values[key] }}
+    <div v-for="(value, key, i) in values" :key="i">
+      For index {{ key }} I calculated {{ value }}
     </div>
   </div>
 </template>
